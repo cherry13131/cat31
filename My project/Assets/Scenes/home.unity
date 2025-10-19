@@ -197,7 +197,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 916090261725292327, guid: cf6cf0b72d75259448cf8f127395783a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -223,7 +223,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 1571d98cec843a0419e9a8039b642b5b, type: 3}
     - target: {fileID: 812724466676000959, guid: cd5f8a9ece7f5cc428e8c3e31f94268c, type: 3}
       propertyPath: m_SortingOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 812724466676000959, guid: cd5f8a9ece7f5cc428e8c3e31f94268c, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -245,6 +245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 3159374239098941511, guid: cd5f8a9ece7f5cc428e8c3e31f94268c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3259458601290084687, guid: cd5f8a9ece7f5cc428e8c3e31f94268c, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.85
@@ -259,7 +263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4763266160806176186, guid: cd5f8a9ece7f5cc428e8c3e31f94268c, type: 3}
       propertyPath: m_Size.y
-      value: 0.74284506
+      value: 0.829721
       objectReference: {fileID: 0}
     - target: {fileID: 4763266160806176186, guid: cd5f8a9ece7f5cc428e8c3e31f94268c, type: 3}
       propertyPath: m_Offset.x
@@ -267,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4763266160806176186, guid: cd5f8a9ece7f5cc428e8c3e31f94268c, type: 3}
       propertyPath: m_Offset.y
-      value: -6.235429
+      value: -6.278867
       objectReference: {fileID: 0}
     - target: {fileID: 4763266160806176186, guid: cd5f8a9ece7f5cc428e8c3e31f94268c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -891,6 +895,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2019756425}
     m_Modifications:
+    - target: {fileID: 3202573909274248478, guid: 9587b12861e018d4eb2507d7be10fe0d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5432676989316864252, guid: 9587b12861e018d4eb2507d7be10fe0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.41
