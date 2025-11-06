@@ -9,16 +9,13 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
 
     public bool canMove = true;
-
-    // Update에서 점프 입력을 감지해서 FixedUpdate에서 적용
     private bool jumpRequested = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = gravityScale;
-        rb.linearDamping = 0f; // 2D에서는 linearDamping 대신 drag
-        // 필요하면 회전 고정
+        rb.linearDamping = 0f; // linearDamping 대신 drag
         rb.freezeRotation = true;
     }
 
@@ -26,7 +23,6 @@ public class PlayerController : MonoBehaviour
     {
         if (!canMove) return;
 
-        // 점프는 한 번만 감지
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             jumpRequested = true;
@@ -38,11 +34,22 @@ public class PlayerController : MonoBehaviour
         if (!canMove) return;
 
         float horizontalMove = Input.GetAxisRaw("Horizontal");
-        rb.linearVelocity = new Vector2(horizontalMove * speed, rb.linearVelocity.y); // linearVelocity -> velocity
+
+        if (isGrounded)
+        {
+            // 땅에서는 즉시 방향 반응
+            rb.linearVelocity = new Vector2(horizontalMove * speed, rb.linearVelocity.y);
+        }
+        else
+        {
+            // 공중에서는 살짝 관성 (Lerp로 부드럽게 변화)
+            Vector2 targetVelocity = new Vector2(horizontalMove * speed, rb.linearVelocity.y);
+            rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, targetVelocity, 0.08f);
+        }
 
         if (jumpRequested && isGrounded)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // 즉시 위로 속도 설정
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
             jumpRequested = false;
         }
@@ -50,7 +57,6 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // 바닥인지 판별 (법선의 y가 충분히 크면 바닥)
         if (collision.contacts.Length > 0 && collision.contacts[0].normal.y > 0.5f)
         {
             isGrounded = true;
@@ -59,7 +65,6 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        // 접촉이 끊기면 착지 해제
         isGrounded = false;
     }
 }
