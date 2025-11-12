@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 34832b60f2145d745a6aef5fc639a8e0
+guid: 086d40b39739c044eae6e0024bb42a40
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2527502987895614139
-    second: testest_0
+      213: 8191068639695737362
+    second: 2flower_0
+  - first:
+      213: 2992657330420921123
+    second: 2flower_1
+  - first:
+      213: 9143508759593824738
+    second: 2flower_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: testest_0
+      name: 2flower_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 94
-        width: 427
-        height: 162
+        x: 3
+        y: 5
+        width: 10
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbaa142839e731320800000000000000
-      internalID: 2527502987895614139
+      spriteID: 21218e797858ca170800000000000000
+      internalID: 8191068639695737362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2flower_1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 5
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323353a7cfd088920800000000000000
+      internalID: 2992657330420921123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2flower_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 5
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e13340c5c444ee70800000000000000
+      internalID: 9143508759593824738
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      testest_0: 2527502987895614139
+      2flower_0: 8191068639695737362
+      2flower_1: 2992657330420921123
+      2flower_2: 9143508759593824738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
