@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: db16ecf71287ca04ab9bbdce089fc607
+guid: 5b4c55b62eb34924abcdf55f725a765f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3197820995663981228
-    second: gress tile_0
+      213: 4583008992709641053
+    second: gresstile_0
   - first:
-      213: -5925631982026376411
-    second: gress tile_1
+      213: -7493897372616400214
+    second: gresstile_1
   - first:
-      213: 1341983102390065880
-    second: gress tile_2
+      213: -1345931446168654729
+    second: gresstile_2
   - first:
-      213: -9088365740193815039
-    second: gress tile_3
-  - first:
-      213: -6177036715579463957
-    second: gress tile_4
-  - first:
-      213: 7162288389035919458
-    second: gress tile_5
-  - first:
-      213: 281906081686631106
-    second: gress tile_6
+      213: -1261731094184711759
+    second: gresstile_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -65,11 +56,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,95 +109,51 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gress tile_1
+      name: gresstile_0
       rect:
         serializedVersion: 2
-        x: 139
-        y: 49
-        width: 8
-        height: 7
-      alignment: 9
-      pivot: {x: 0.125, y: 2.4285715}
+        x: 4
+        y: 13
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: de8ad8774f0c31443bed4807687ede28
-      internalID: -5925631982026376411
+      spriteID: d5301e4a56e1a9f30800000000000000
+      internalID: 4583008992709641053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gress tile_2
+      name: gresstile_1
       rect:
         serializedVersion: 2
-        x: 35
+        x: 38
         y: 13
         width: 34
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f93b4b091d787a440aae19321f4666ec
-      internalID: 1341983102390065880
+      spriteID: aa267f14b04500890800000000000000
+      internalID: -7493897372616400214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gress tile_4
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 49
-        width: 11
-        height: 10
-      alignment: 9
-      pivot: {x: 0.27272728, y: 1.8000001}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1eeeb7fe2640a545919b541df0956cf
-      internalID: -6177036715579463957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gress tile_5
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 49
-        width: 9
-        height: 9
-      alignment: 9
-      pivot: {x: 0.44444445, y: 2}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfb4eb68b1c90584d883ebf9810fe450
-      internalID: 7162288389035919458
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1
+      name: gresstile_2
       rect:
         serializedVersion: 2
         x: 73
@@ -214,37 +161,37 @@ TextureImporter:
         width: 34
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fa245519dc4a45d47820374c2df3c6be
-      internalID: 843308623
+      spriteID: 77ce6131b7a425de0800000000000000
+      internalID: -1345931446168654729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2
+      name: gresstile_3
       rect:
         serializedVersion: 2
-        x: 109
+        x: 108
         y: 13
         width: 34
         height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bbaa6cf2af6142941ba922dd717ed2e2
-      internalID: 495345831
+      spriteID: 1b92e09314e6d7ee0800000000000000
+      internalID: -1261731094184711759
       vertices: []
       indices: 
       edges: []
@@ -253,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b72c9e1da61b2d1499fdc98690fbb625
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -261,22 +208,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceOnImport
-        value: False
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      1: 843308623
-      2: 495345831
-      gress tile_0: -3197820995663981228
-      gress tile_1: -5925631982026376411
-      gress tile_2: 1341983102390065880
-      gress tile_3: -9088365740193815039
-      gress tile_4: -6177036715579463957
-      gress tile_5: 7162288389035919458
-      gress tile_6: 281906081686631106
-      gress tile_8: -772410137
+      gresstile_0: 4583008992709641053
+      gresstile_1: -7493897372616400214
+      gresstile_2: -1345931446168654729
+      gresstile_3: -1261731094184711759
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: gress tile_1
+  m_Name: gresstile_2
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -5925631982026376411, guid: db16ecf71287ca04ab9bbdce089fc607, type: 3}
+  m_Sprite: {fileID: -1345931446168654729, guid: 5b4c55b62eb34924abcdf55f725a765f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
