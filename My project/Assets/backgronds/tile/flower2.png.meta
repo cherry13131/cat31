@@ -111,10 +111,10 @@ TextureImporter:
         serializedVersion: 2
         x: 3
         y: 5
-        width: 10
+        width: 24
         height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 1.1111112}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -127,55 +127,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: 2flower_1
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 5
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 323353a7cfd088920800000000000000
-      internalID: 2992657330420921123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2flower_2
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 5
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e13340c5c444ee70800000000000000
-      internalID: 9143508759593824738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 90f77e06cdd45d84ca1fcae0e0d8fab5
     internalID: 0
     vertices: []
     indices: 

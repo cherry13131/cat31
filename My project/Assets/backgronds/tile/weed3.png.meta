@@ -111,10 +111,10 @@ TextureImporter:
         serializedVersion: 2
         x: 3
         y: 5
-        width: 9
+        width: 24
         height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 1.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -127,55 +127,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: 3weed_1
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 5
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85b8eb8e4e206f0e0800000000000000
-      internalID: -2236596982762271912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3weed_2
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 5
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25f255b4cbca9be00800000000000000
-      internalID: 1061069111940165458
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5ca69661c5df4404cb8bb067ceb55eba
     internalID: 0
     vertices: []
     indices: 
