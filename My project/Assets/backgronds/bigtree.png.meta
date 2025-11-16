@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bd1c09db0b4b11845870c39ae5ae2fb6
+guid: e6acd865ec58af64f9bb17fdeba592a2
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,12 +103,12 @@ TextureImporter:
       name: bigtree_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 12
-        width: 231
-        height: 197
+        x: 9
+        y: 15
+        width: 232
+        height: 194
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ed317984621a5374dbf4bd8e17b320c0
     internalID: 0
     vertices: []
     indices: 

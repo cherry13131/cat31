@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e6acd865ec58af64f9bb17fdeba592a2
+guid: 80eb89fcd5edbbe468ebdad2e9311698
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6279409994561399586
-    second: bigtree_0
+      213: -2182124076254010665
+    second: rock_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bigtree_0
+      name: rock_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 15
-        width: 232
-        height: 194
+        x: 2
+        y: 0
+        width: 44
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed4512331ed0bd8a0800000000000000
-      internalID: -6279409994561399586
+      spriteID: 7d26d0bc6b987b1e0800000000000000
+      internalID: -2182124076254010665
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ed317984621a5374dbf4bd8e17b320c0
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bigtree_0: -6279409994561399586
+      rock_0: -2182124076254010665
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
