@@ -1,0 +1,593 @@
+fileFormatVersion: 2
+guid: 406d30fbbef9e44428eec63368ff382a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8368294490626858956
+    second: downanime_0
+  - first:
+      213: 5924529936180920618
+    second: downanime_1
+  - first:
+      213: 3663676725105015773
+    second: downanime_2
+  - first:
+      213: -6162884817497007454
+    second: downanime_3
+  - first:
+      213: 3741177333281284540
+    second: downanime_4
+  - first:
+      213: 7357730499844938973
+    second: downanime_5
+  - first:
+      213: -1708511401405462652
+    second: downanime_6
+  - first:
+      213: -7037747886592201493
+    second: downanime_7
+  - first:
+      213: -4201249484456194560
+    second: downanime_8
+  - first:
+      213: 4308315721316360096
+    second: downanime_9
+  - first:
+      213: 5807755570883263524
+    second: downanime_10
+  - first:
+      213: -391022849634299426
+    second: downanime_11
+  - first:
+      213: -6831727678468181659
+    second: downanime_12
+  - first:
+      213: 8774717308545405100
+    second: downanime_13
+  - first:
+      213: -8076518550258544358
+    second: downanime_14
+  - first:
+      213: -3641644691503996483
+    second: downanime_15
+  - first:
+      213: -8231665252807772524
+    second: downanime_16
+  - first:
+      213: 707338602821917516
+    second: downanime_17
+  - first:
+      213: -2935160007592221841
+    second: downanime_18
+  - first:
+      213: 3293817645870484326
+    second: downanime_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: downanime_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 96
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf1ca98087222470800000000000000
+      internalID: 8368294490626858956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 96
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a214b336698283250800000000000000
+      internalID: 5924529936180920618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 96
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb30cb029ef7d230800000000000000
+      internalID: 3663676725105015773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_3
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 96
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa517d29e8097aa0800000000000000
+      internalID: -6162884817497007454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb169f786f45be330800000000000000
+      internalID: 3741177333281284540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_5
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 96
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc905c18e8eb1660800000000000000
+      internalID: 7357730499844938973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 48
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487c588bee52a48e0800000000000000
+      internalID: -1708511401405462652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_7
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 48
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec6ae0b595e45e90800000000000000
+      internalID: -7037747886592201493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_8
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 48
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e02326ad922b5c0800000000000000
+      internalID: -4201249484456194560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 48
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afda4572563acb30800000000000000
+      internalID: 4308315721316360096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_10
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42cfac0cbea499050800000000000000
+      internalID: 5807755570883263524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_11
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 48
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed19c7c3acec29af0800000000000000
+      internalID: -391022849634299426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56133ba5fd3d031a0800000000000000
+      internalID: -6831727678468181659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_13
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca01254d6ee06c970800000000000000
+      internalID: 8774717308545405100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_14
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a119cf57b217aef80800000000000000
+      internalID: -8076518550258544358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_15
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1a7b48277467dc0800000000000000
+      internalID: -3641644691503996483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_16
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4967778d01043cd80800000000000000
+      internalID: -8231665252807772524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downanime_17
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 0
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b1f1d26b8f0d900800000000000000
+      internalID: 707338602821917516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 17762d9f8667558459672b9cc6bc0a29
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":8.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      downanime_0: 8368294490626858956
+      downanime_1: 5924529936180920618
+      downanime_10: 5807755570883263524
+      downanime_11: -391022849634299426
+      downanime_12: -6831727678468181659
+      downanime_13: 8774717308545405100
+      downanime_14: -8076518550258544358
+      downanime_15: -3641644691503996483
+      downanime_16: -8231665252807772524
+      downanime_17: 707338602821917516
+      downanime_2: 3663676725105015773
+      downanime_3: -6162884817497007454
+      downanime_4: 3741177333281284540
+      downanime_5: 7357730499844938973
+      downanime_6: -1708511401405462652
+      downanime_7: -7037747886592201493
+      downanime_8: -4201249484456194560
+      downanime_9: 4308315721316360096
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
