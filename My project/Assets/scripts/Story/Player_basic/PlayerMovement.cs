@@ -47,12 +47,12 @@ public class PlayerController : MonoBehaviour
         if (h > 0)
         {
             // 오른쪽 키를 누르면 원래 방향(false)
-            GetComponent<SpriteRenderer>().flipX = true;
+            GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (h < 0)
         {
             // 왼쪽 키를 누르면 좌우 반전(true)
-            GetComponent<SpriteRenderer>().flipX = false;
+            GetComponent<SpriteRenderer>().flipX = true;
         }
         // --- 좌우 반전 코드 추가 끝 ---
     }
