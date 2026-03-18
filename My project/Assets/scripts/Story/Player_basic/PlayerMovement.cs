@@ -4,93 +4,76 @@ public class PlayerController : MonoBehaviour
 {
     public float gravityScale = 10f;
     public float speed = 5f;
-    public float jumpForce = 10f;
+    public float jumpForce = 12f;
     public float fallMultiplier = 2.5f;
     public bool canMove = true;
 
     private Rigidbody2D rb;
-    private bool isGrounded;
-
-    // ★ 추가: 애니메이터를 제어하기 위한 변수를 선언합니다.
     private Animator anim;
+    private bool isGrounded;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+
         rb.gravityScale = gravityScale;
         rb.freezeRotation = true;
-
-        // ★ 추가: 실제 캐릭터에 붙어있는 Animator 컴포넌트를 가져옵니다.
-        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        // 수평(A,D), 수직(W,S) 입력값 받기
         float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
 
-        // ★ 수정: anim 변수가 null이 아닐 때만 실행되도록 안전하게 짭니다.
+        // 👉 이동 애니메이션
         if (anim != null)
         {
-            // 입력값이 하나라도 있으면(움직이면) true, 없으면 false
-            if (h != 0 || v != 0)
-            {
-                anim.SetBool("isMoving", true);
-            }
-            else
-            {
-                anim.SetBool("isMoving", false);
-            }
+            anim.SetBool("isMoving", h != 0);
+            anim.SetBool("isJumping", !isGrounded);
         }
-        // --- 좌우 반전 코드 추가 시작 ---
+
+        // 👉 방향 전환
         if (h > 0)
-        {
-            // 오른쪽 키를 누르면 원래 방향(false)
             GetComponent<SpriteRenderer>().flipX = false;
-        }
         else if (h < 0)
-        {
-            // 왼쪽 키를 누르면 좌우 반전(true)
             GetComponent<SpriteRenderer>().flipX = true;
+
+        // 👉 점프 입력 (한 번만)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && canMove)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            isGrounded = false;
         }
-        // --- 좌우 반전 코드 추가 끝 ---
     }
 
     void FixedUpdate()
     {
         if (!canMove)
         {
-            rb.linearVelocity = Vector2.zero;
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             return;
         }
 
         float moveX = Input.GetAxisRaw("Horizontal");
-        Vector2 targetVelocity = new Vector2(moveX * speed, rb.linearVelocity.y);
 
+        // 👉 좌우 이동
         if (isGrounded)
         {
-            rb.linearVelocity = targetVelocity;
+            rb.linearVelocity = new Vector2(moveX * speed, rb.linearVelocity.y);
         }
         else
         {
-            rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, targetVelocity, 0.15f);
+            rb.linearVelocity = Vector2.Lerp(
+                rb.linearVelocity,
+                new Vector2(moveX * speed, rb.linearVelocity.y),
+                0.1f
+            );
         }
 
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            isGrounded = false;
-        }
-
-        // 빠른 낙하 로직
-        if (rb.linearVelocity.y < 0f)
+        // 👉 낙하 가속 (핵심)
+        if (rb.linearVelocity.y < 0)
         {
             rb.gravityScale = gravityScale * fallMultiplier;
-        }
-        else if (rb.linearVelocity.y > 0f)
-        {
-            rb.gravityScale = gravityScale * 1.5f;
         }
         else
         {
@@ -98,25 +81,33 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // (이하 충돌 체크 로직은 동일)
+    // 👉 바닥 체크
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.contacts.Length > 0 && collision.contacts[0].normal.y > 0.5f)
-            isGrounded = true;
+        foreach (ContactPoint2D contact in collision.contacts)
+        {
+            if (contact.normal.y > 0.5f)
+            {
+                isGrounded = true;
+                return;
+            }
+        }
     }
 
     void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.contacts.Length > 0)
+        foreach (ContactPoint2D contact in collision.contacts)
         {
-            foreach (ContactPoint2D contact in collision.contacts)
+            if (contact.normal.y > 0.5f)
             {
-                if (contact.normal.y > 0.5f)
-                {
-                    isGrounded = true;
-                    return;
-                }
+                isGrounded = true;
+                return;
             }
         }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        isGrounded = false;
     }
 }
