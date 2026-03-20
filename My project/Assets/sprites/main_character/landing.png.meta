@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 339a4f09b58520d43a8b69fc70f3286f
+guid: d9046c7177d8735409ffa1a24f8762b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2251879231025388370
-    second: jump 1_0
+      213: -1778171604891230935
+    second: landing_0
   - first:
-      213: 7433205329265719020
-    second: jump 1_1
+      213: -8266078457159027492
+    second: landing_1
   - first:
-      213: -7794233420385945655
-    second: jump 1_2
+      213: 346002565792098887
+    second: landing_2
   - first:
-      213: -1767209262313429290
-    second: jump 1_3
+      213: -3504602311617232239
+    second: landing_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,76 +109,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump_0
+      name: landing_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 10
-        width: 64
-        height: 54
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c87e6f0ea1b72bc4a903e1744cceedc5
-      internalID: 1316968448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 10
-        width: 64
-        height: 54
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db25d243a153574468ec8612c7d0edbd
-      internalID: 1056163409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 18
-        width: 64
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 538247239b716a946bbda99303680d44
-      internalID: -867600394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_3
-      rect:
-        serializedVersion: 2
-        x: 192
         y: 25
         width: 64
         height: 39
@@ -188,10 +122,76 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4dec55dfde6cfec4980ae25c577e3e11
-      internalID: -883502823
+      spriteID: 92d95c4b85aa257e0800000000000000
+      internalID: -1778171604891230935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landing_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 18
+        width: 64
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4f683507df84d80800000000000000
+      internalID: -8266078457159027492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landing_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 10
+        width: 64
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a6969108f3dc400800000000000000
+      internalID: 346002565792098887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: landing_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 10
+        width: 64
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 192ca0904c62d5fc0800000000000000
+      internalID: -3504602311617232239
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 42dac1b346e548f458246b44d020354b
+    spriteID: d7616028452bf734c97e7642d68469f3
     internalID: 0
     vertices: []
     indices: 
@@ -212,10 +212,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":55.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      jump_0: 1316968448
-      jump_1: 1056163409
-      jump_2: -867600394
-      jump_3: -883502823
+      landing_0: -1778171604891230935
+      landing_1: -8266078457159027492
+      landing_2: 346002565792098887
+      landing_3: -3504602311617232239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
