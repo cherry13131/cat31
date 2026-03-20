@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 2b519fc19c13712478cabca28a1cfc99
+guid: 108b16b02a769a0469703d335fc74f51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1342638764303457562
-    second: sitanime_0
+      213: -1780346783942680854
+    second: sit_0
   - first:
-      213: 3489532999349199678
-    second: sitanime_1
+      213: -5835926142609931317
+    second: sit_1
   - first:
-      213: 117774891275174807
-    second: sitanime_2
+      213: -6548175957524531438
+    second: sit_2
   - first:
-      213: -1797925778115805571
-    second: sitanime_3
+      213: 1056712624508818636
+    second: sit_3
   - first:
-      213: 2367473527879181452
-    second: sitanime_4
+      213: -3289999227947949178
+    second: sit_4
   - first:
-      213: 4864932073607964246
-    second: sitanime_5
+      213: 3408377101938051098
+    second: sit_5
   - first:
-      213: 6485157197238163447
-    second: sitanime_6
+      213: 5518955271013388159
+    second: sit_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -91,7 +91,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -118,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sitanime_0
+      name: sit_0
       rect:
         serializedVersion: 2
         x: 1
@@ -133,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e2e500582dfd5de0800000000000000
-      internalID: -1342638764303457562
+      spriteID: aee561e5800fa47e0800000000000000
+      internalID: -1780346783942680854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitanime_1
+      name: sit_1
       rect:
         serializedVersion: 2
         x: 49
@@ -155,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e33663a46cf4d6030800000000000000
-      internalID: 3489532999349199678
+      spriteID: bc3c156e710a20fa0800000000000000
+      internalID: -5835926142609931317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitanime_2
+      name: sit_2
       rect:
         serializedVersion: 2
         x: 97
@@ -177,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 793caedb3ab62a100800000000000000
-      internalID: 117774891275174807
+      spriteID: 2173ffc09a43025a0800000000000000
+      internalID: -6548175957524531438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitanime_3
+      name: sit_3
       rect:
         serializedVersion: 2
         x: 1
@@ -199,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7eb3e6d70c7c07e0800000000000000
-      internalID: -1797925778115805571
+      spriteID: cc4d48588823aae00800000000000000
+      internalID: 1056712624508818636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitanime_4
+      name: sit_4
       rect:
         serializedVersion: 2
         x: 49
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c84216451a4fad020800000000000000
-      internalID: 2367473527879181452
+      spriteID: 6836ad222239752d0800000000000000
+      internalID: -3289999227947949178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitanime_5
+      name: sit_5
       rect:
         serializedVersion: 2
         x: 97
@@ -243,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 656aec702f5b38340800000000000000
-      internalID: 4864932073607964246
+      spriteID: a18c7957aecfc4f20800000000000000
+      internalID: 3408377101938051098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sitanime_6
+      name: sit_6
       rect:
         serializedVersion: 2
         x: 1
@@ -265,8 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f7d2fd6c18eff950800000000000000
-      internalID: 6485157197238163447
+      spriteID: f7fc50c0494479c40800000000000000
+      internalID: 5518955271013388159
       vertices: []
       indices: 
       edges: []
@@ -285,13 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sitanime_0: -1342638764303457562
-      sitanime_1: 3489532999349199678
-      sitanime_2: 117774891275174807
-      sitanime_3: -1797925778115805571
-      sitanime_4: 2367473527879181452
-      sitanime_5: 4864932073607964246
-      sitanime_6: 6485157197238163447
+      sit_0: -1780346783942680854
+      sit_1: -5835926142609931317
+      sit_2: -6548175957524531438
+      sit_3: 1056712624508818636
+      sit_4: -3289999227947949178
+      sit_5: 3408377101938051098
+      sit_6: 5518955271013388159
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
