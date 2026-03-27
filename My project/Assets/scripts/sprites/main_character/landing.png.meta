@@ -112,7 +112,7 @@ TextureImporter:
       name: landing_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 25
         width: 64
         height: 39
@@ -134,7 +134,7 @@ TextureImporter:
       name: landing_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 18
         width: 64
         height: 46
@@ -156,7 +156,7 @@ TextureImporter:
       name: landing_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 10
         width: 64
         height: 54
@@ -170,28 +170,6 @@ TextureImporter:
       bones: []
       spriteID: 74a6969108f3dc400800000000000000
       internalID: 346002565792098887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: landing_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 10
-        width: 64
-        height: 54
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 192ca0904c62d5fc0800000000000000
-      internalID: -3504602311617232239
       vertices: []
       indices: 
       edges: []
