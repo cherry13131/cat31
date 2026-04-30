@@ -557,7 +557,7 @@ Transform:
   m_GameObject: {fileID: 1037001377}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.08, y: 4.59, z: 0}
+  m_LocalPosition: {x: 1, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -766,6 +766,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1839735485 &1307998014 stripped
+Tilemap:
+  m_CorrespondingSourceObject: {fileID: 8041652996129701886, guid: 58427ca0180e1814b9bfecaca083a213, type: 3}
+  m_PrefabInstance: {fileID: 6566343577947521550}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1425706946
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +901,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 000000004d943a0c13e4ab22cf540612bff4fc82
   m_LightCookieSprite: {fileID: 8284087734974297348, guid: e9a97e19fa610b445abb15e7545b8396, type: 3}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 10
+  m_LightOrder: 8
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 0.5
@@ -911,10 +916,10 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 57.53
-  m_PointLightOuterAngle: 58.17
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 5.6128697
+  m_PointLightInnerAngle: 0
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 2.979534
+  m_PointLightOuterRadius: 3.6331882
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -933,7 +938,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446776351}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.86696106, w: 0.49837586}
+  m_LocalRotation: {x: 0, y: 0, z: 0.8767591, w: 0.4809298}
   m_LocalPosition: {x: 4.36, y: -1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -953,6 +958,7 @@ GameObject:
   - component: {fileID: 1455460573}
   - component: {fileID: 1455460576}
   - component: {fileID: 1455460577}
+  - component: {fileID: 1455460578}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1003,7 +1009,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.4375
+  orthographic size: 6.75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1028,7 +1034,7 @@ Transform:
   m_GameObject: {fileID: 1455460572}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 2.5, z: -10}
+  m_LocalPosition: {x: 5, y: 1.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1092,16 +1098,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
   m_ComponentVersion: 1
   m_AssetsPPU: 16
-  m_RefResolutionX: 248
-  m_RefResolutionY: 248
+  m_RefResolutionX: 384
+  m_RefResolutionY: 216
   m_CropFrame: 0
-  m_GridSnapping: 1
+  m_GridSnapping: 2
   m_FilterMode: 0
   m_UpscaleRT: 0
   m_PixelSnapping: 0
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!114 &1455460578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455460572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e435c1e6d5cfadd4cb9948367d9418c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
+  target: {fileID: 2306754849042754249}
+  tilemap: {fileID: 1307998014}
 --- !u!1 &1632643809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,6 +1540,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &2306754849042754249 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8492251131005938032, guid: cbff92ee3f7c1d943931131a80778c47, type: 3}
+  m_PrefabInstance: {fileID: 2306754849042754241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3325006970218006733
 GameObject:
   m_ObjectHideFlags: 0
