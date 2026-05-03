@@ -11,7 +11,7 @@ public class EnemySensor : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("충돌 감지: " + other.name);
+        Debug.Log("Enter: " + other.name);
 
         if (other.CompareTag("Player"))
         {
@@ -22,7 +22,7 @@ public class EnemySensor : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("충돌 종료: " + other.name);
+        Debug.Log("Exit: " + other.name);
 
         if (other.CompareTag("Player"))
         {

@@ -11,14 +11,24 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float detectionDistance = 0.5f;
     [SerializeField] private LayerMask groundLayer;
 
+    [SerializeField] private Transform wallFrontCheck;
+    [SerializeField] private float wallCheckDistance = 0.2f;
+
     [Header("Chase Settings")]
     [SerializeField] private float directionChangeThreshold = 0.1f;
+
+    [Header("Lose Target Delay")]
+    [SerializeField] private float loseTargetDelay = 2f;
 
     private Rigidbody2D rb;
     private Transform target;
 
     private int direction = 1; // 1 = right, -1 = left
     public bool isPlayerDetected { get; private set; }
+
+    private float loseTimer = 0f;
+    private bool isLosingTarget = false;
+    private bool isPatrolling = true;
 
     void Start()
     {
@@ -29,38 +39,81 @@ public class EnemyAI : MonoBehaviour
     {
         if (isPlayerDetected && target != null)
         {
+            isLosingTarget = false;
+            loseTimer = 0f;
+            isPatrolling = false;
+
             ChasePlayer();
         }
         else
+        {
+            HandleLoseTarget();
+        }
+
+        if (isPatrolling)
         {
             Patrol();
         }
 
         Move();
-        UpdateSpriteDirection();
     }
 
+    // ------------------------
+    // 타겟 놓쳤을 때 처리 (유일한 하나!)
+    // ------------------------
+    void HandleLoseTarget()
+    {
+        if (!isLosingTarget)
+        {
+            isLosingTarget = true;
+            loseTimer = loseTargetDelay;
+        }
+
+        loseTimer -= Time.fixedDeltaTime;
+
+        Debug.Log("Patrolling 상태: " + isPatrolling + " / Timer: " + loseTimer);
+
+        if (loseTimer <= 0f)
+        {
+            isPatrolling = true;
+        }
+    }
+
+    // ------------------------
+    // 순찰
+    // ------------------------
     void Patrol()
     {
         CheckEdge();
     }
 
+    // ------------------------
+    // 추적
+    // ------------------------
     void ChasePlayer()
     {
         float xDifference = target.position.x - transform.position.x;
 
-        // 너무 가까울 때 좌우로 떨리는 현상 방지
         if (Mathf.Abs(xDifference) > directionChangeThreshold)
         {
-            direction = xDifference > 0 ? 1 : -1;
+            int newDir = xDifference > 0 ? 1 : -1;
+
+            if (newDir != direction)
+            {
+                direction = newDir;
+                UpdateSpriteDirection();
+            }
         }
     }
 
+    // ------------------------
+    // 이동
+    // ------------------------
     void Move()
     {
-        float currentSpeed = isPlayerDetected
-            ? moveSpeed * chaseSpeedMultiplier
-            : moveSpeed;
+        float currentSpeed = !isPatrolling
+            ? moveSpeed * chaseSpeedMultiplier   // 추적 중
+            : moveSpeed;                         // 순찰 중
 
         rb.linearVelocity = new Vector2(
             direction * currentSpeed,
@@ -68,8 +121,12 @@ public class EnemyAI : MonoBehaviour
         );
     }
 
+    // ------------------------
+    // 낙사 방지
+    // ------------------------
     void CheckEdge()
     {
+        // 아래 체크 (낙사 방지)
         RaycastHit2D groundInfo = Physics2D.Raycast(
             wallCheck.position,
             Vector2.down,
@@ -77,10 +134,27 @@ public class EnemyAI : MonoBehaviour
             groundLayer
         );
 
-        if (groundInfo.collider == null)
+        // 앞쪽 체크 (벽 감지)
+        RaycastHit2D wallInfo = Physics2D.Raycast(
+            wallFrontCheck.position,
+            Vector2.right * direction,
+            wallCheckDistance,
+            groundLayer
+        );
+
+        if (groundInfo.collider == null || wallInfo.collider != null)
         {
             Flip();
         }
+    }
+
+    // ------------------------
+    // 방향 반전
+    // ------------------------
+    void Flip()
+    {
+        direction *= -1;
+        UpdateSpriteDirection();
     }
 
     void UpdateSpriteDirection()
@@ -90,12 +164,9 @@ public class EnemyAI : MonoBehaviour
         transform.localScale = scale;
     }
 
-    public void Flip()
-    {
-        direction *= -1;
-        UpdateSpriteDirection();
-    }
-
+    // ------------------------
+    // 감지
+    // ------------------------
     public void SetTarget(Transform player)
     {
         target = player;
@@ -108,6 +179,9 @@ public class EnemyAI : MonoBehaviour
         isPlayerDetected = false;
     }
 
+    // ------------------------
+    // 디버그
+    // ------------------------
     private void OnDrawGizmosSelected()
     {
         if (wallCheck == null) return;
@@ -116,6 +190,11 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawLine(
             wallCheck.position,
             wallCheck.position + Vector3.down * detectionDistance
+        );
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(
+            wallFrontCheck.position,
+            wallFrontCheck.position + (Vector3)(Vector2.right * direction * wallCheckDistance)
         );
     }
 }
