@@ -59,7 +59,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     // ------------------------
-    // 타겟 놓쳤을 때 처리 (유일한 하나!)
+    // 타겟 놓쳤을 때 처리
     // ------------------------
     void HandleLoseTarget()
     {
@@ -112,8 +112,8 @@ public class EnemyAI : MonoBehaviour
     void Move()
     {
         float currentSpeed = !isPatrolling
-            ? moveSpeed * chaseSpeedMultiplier   // 추적 중
-            : moveSpeed;                         // 순찰 중
+            ? moveSpeed * chaseSpeedMultiplier
+            : moveSpeed;
 
         rb.linearVelocity = new Vector2(
             direction * currentSpeed,
@@ -126,7 +126,6 @@ public class EnemyAI : MonoBehaviour
     // ------------------------
     void CheckEdge()
     {
-        // 아래 체크 (낙사 방지)
         RaycastHit2D groundInfo = Physics2D.Raycast(
             wallCheck.position,
             Vector2.down,
@@ -134,7 +133,6 @@ public class EnemyAI : MonoBehaviour
             groundLayer
         );
 
-        // 앞쪽 체크 (벽 감지)
         RaycastHit2D wallInfo = Physics2D.Raycast(
             wallFrontCheck.position,
             Vector2.right * direction,
@@ -165,7 +163,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     // ------------------------
-    // 감지
+    // EnemySensor가 자동 호출
     // ------------------------
     public void SetTarget(Transform player)
     {
@@ -173,7 +171,7 @@ public class EnemyAI : MonoBehaviour
         isPlayerDetected = true;
     }
 
-    public void RemoveTarget()
+    public void ClearTarget()
     {
         target = null;
         isPlayerDetected = false;
@@ -184,17 +182,20 @@ public class EnemyAI : MonoBehaviour
     // ------------------------
     private void OnDrawGizmosSelected()
     {
-        if (wallCheck == null) return;
+        if (wallCheck == null || wallFrontCheck == null)
+            return;
 
         Gizmos.color = Color.red;
         Gizmos.DrawLine(
             wallCheck.position,
             wallCheck.position + Vector3.down * detectionDistance
         );
+
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(
             wallFrontCheck.position,
-            wallFrontCheck.position + (Vector3)(Vector2.right * direction * wallCheckDistance)
+            wallFrontCheck.position +
+            (Vector3)(Vector2.right * direction * wallCheckDistance)
         );
     }
 }

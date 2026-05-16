@@ -2,13 +2,6 @@ using UnityEngine;
 
 public class EnemySensor : MonoBehaviour
 {
-    private EnemyAI parentAI;
-
-    void Awake()
-    {
-        parentAI = GetComponentInParent<EnemyAI>();
-    }
-
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Enter: " + other.name);
@@ -16,7 +9,12 @@ public class EnemySensor : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("플레이어 감지!");
-            parentAI.SetTarget(other.transform);
+
+            transform.root.SendMessage(
+                "SetTarget",
+                other.transform,
+                SendMessageOptions.DontRequireReceiver
+            );
         }
     }
 
@@ -27,7 +25,11 @@ public class EnemySensor : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("플레이어 놓침");
-            parentAI.RemoveTarget();
+
+            transform.root.SendMessage(
+                "ClearTarget",
+                SendMessageOptions.DontRequireReceiver
+            );
         }
     }
 }
