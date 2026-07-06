@@ -1,7 +1,9 @@
+using System;
+using System.Collections;
 using UnityEngine;
-using UntiyEngine.UI;
+using UnityEngine.UI;
 
-public class Fade : MonoBehavior
+public class Fade : MonoBehaviour
 {
     Image fadeImage;
     [SerializeField] float Duration = 0.5f;
@@ -10,7 +12,7 @@ public class Fade : MonoBehavior
 
     private void Awake()
     {
-        fadeImage = GetComponentChildren<Image>();
+        fadeImage = GetComponentInChildren<Image>();
     }
        
     public void FadeIn(float duration = -1, Action onComplete = null)

@@ -11,15 +11,15 @@ public class CameraFollow : MonoBehaviour
 
     void Start()
     {
-        Bounds bounds = tilemap.localBounds;
+        Bounds bounds = tilemap.GetComponent<TilemapRenderer>().bounds;
 
-        minX = bounds.min.x;
-        maxX = bounds.max.x;
+        minX = bounds.min.x+0.3f;
+        maxX = bounds.max.x-0.3f;
     }
 
     void LateUpdate()
     {
-        float camHalfWidth = Camera.main.orthographicSize * Screen.width / Screen.height;
+        float camHalfWidth = Camera.main.orthographicSize * (float)Screen.width / Screen.height;
 
         float targetX = target.position.x;
 
